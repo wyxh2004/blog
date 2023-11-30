@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="/PersonalBlogPage/css/layout.css">
 
 		
-		<title> 微雨星晗的个人博客</title>
+		<title> 关于本人 -  微雨星晗的个人博客</title>
 		<link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
 		<script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
 		<!-- lazyload -->
@@ -80,14 +80,14 @@
 		</a>
 	</div>
 	<div class="kira-count">
-		<div><span>文章</span>1</div>
-		<div><span>标签</span>0</div>
-		<div><span>分类</span>0</div>
+		<div><span>文章</span>6</div>
+		<div><span>标签</span>9</div>
+		<div><span>分类</span>2</div>
 	</div>
 	<div class="kira-list">
 		
 		<a
-			class="kira-list-item mdui-ripple true"
+			class="kira-list-item mdui-ripple false"
 			href="/PersonalBlogPage/"
 			title="回到首页"
 		>
@@ -119,7 +119,7 @@
 		</a>
 		
 		<a
-			class="kira-list-item mdui-ripple false"
+			class="kira-list-item mdui-ripple true"
 			href="/PersonalBlogPage/about.html"
 			title="关于本人"
 		>
@@ -221,8 +221,41 @@
 
 		
 			
+  <div class="kira-widget-wrap">
+    <h3 class="kira-widget-title">分类</h3>
+    <div class="kira-widget">
+      <ul class="category-list">
+        
+        
+
+        
+          <li class="category-list-item">
+            <a class="category-list-link" href="/PersonalBlogPage/categories/编程/">
+              编程
+            </a>
+            <span class="category-list-count">5</span>
+          </li>
+        
+          <li class="category-list-item">
+            <a class="category-list-link" href="/PersonalBlogPage/categories/面经/">
+              面经
+            </a>
+            <span class="category-list-count">0</span>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
 		
 			
+	<div class="kira-widget-wrap">
+		<div id="randomtagcloud" class="kira-widget tagcloud kira-rainbow">
+			<a href="/PersonalBlogPage/tags/TypeScript/" style="font-size: 15px;">TypeScript</a> <a href="/PersonalBlogPage/tags/Unity3D/" style="font-size: 15px;">Unity3D</a> <a href="/PersonalBlogPage/tags/VSCODE/" style="font-size: 20px;">VSCODE</a> <a href="/PersonalBlogPage/tags/Vue/" style="font-size: 15px;">Vue</a> <a href="/PersonalBlogPage/tags/electron/" style="font-size: 15px;">electron</a> <a href="/PersonalBlogPage/tags/%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8/" style="font-size: 10px;">字节跳动</a> <a href="/PersonalBlogPage/tags/%E8%9A%82%E8%9A%81/" style="font-size: 10px;">蚂蚁</a> <a href="/PersonalBlogPage/tags/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4/" style="font-size: 10px;">阿里巴巴</a> <a href="/PersonalBlogPage/tags/%E9%9D%A2%E8%AF%95/" style="font-size: 10px;">面试</a>
+		</div>
+		
+	</div>
+
 
 		
 	</aside>
@@ -232,6 +265,7 @@
 		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> &
 		<a href="https://github.com/ch1ny/kira-hexo/" target="_blank">Kira-Hexo</a>
 		<br />
+		
 		
 	</div>
 </div>
@@ -246,42 +280,122 @@
 			<div class="kira-content">
 				<div id="kira-top-header"></div>
 				<div class="kira-main-content">
-					<div class="kira-posts">
-    
-        <div class="kira-post">
-            <a href="/PersonalBlogPage/2023/11/29/hello-world/">
-                
-                <div
-                    class="kira-post-cover mdui-ripple"
-                    style="padding-bottom: '56.25%'"
-                >
-                    <img
-                        data-src="https://desk-fd.zol-img.com.cn/t_s960x600c5/g5/M00/01/04/ChMkJlg2YQmIcX8bAB2MXkUwdIwAAYB0gLxApEAHYx2470.png"
-                        data-sizes="auto"
-                        alt="你好，我是微雨星晗"
-                        class="lazyload"
-                    />
-                    <h1>你好，我是微雨星晗</h1>
+					
+<link rel="stylesheet" href="/PersonalBlogPage/css/kira-image.css">
+
+
+<script src="/PersonalBlogPage/js/kira-image.js"></script>
+
+<div class="kira-image">
+    <div class="kira-image-modal">
+        <div class="kira-image-header">
+            <div class="kira-image-counter"></div>
+            <div class="kira-image-title"></div>
+            <div class="kira-image-operation">
+                <div class="kira-image-operation-button" id="kira-image-operation-button-zoom">
+                    <i class="kirafont icon-zoom-in"></i>
                 </div>
-                
-            </a>
-
-            <div class="kira-post-meta kira-rainbow">
-                <a>
-                    <i class="kirafont icon-calendar-fill"></i>
-                    2023年11月29日
-                </a>
-                <a>
-                    <i class="kirafont icon-edit-fill"></i>
-                    111 字
-                </a>
-
+                <div class="kira-image-operation-button" id="kira-image-operation-button-close">
+                    <i class="kirafont icon-close"></i>
+                </div>
             </div>
-    
-            
         </div>
-        <div class="kira-hr"></div>
-    
+        <div class="kira-image-container">
+            <div class="kira-image-prev-button-panel">
+                <div class="kira-image-exchange-button">
+                    <i class="kirafont icon-left"></i>
+                </div>
+            </div>
+            <div class="kira-image-list">
+                <div class="kira-image-prev">
+                    <img />
+                </div>
+                <div class="kira-image-now">
+                    <img />
+                </div>
+                <div class="kira-image-next">
+                    <img />
+                </div>
+            </div>
+            <div class="kira-image-next-button-panel">
+                <div class="kira-image-exchange-button">
+                    <i class="kirafont icon-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="kira-post">
+	<article>
+		
+		<div
+			class="kira-post-cover"
+			style="padding-bottom: '56.25%'"
+		>
+			<img
+				data-src="https://desk-fd.zol-img.com.cn/t_s960x600c5/g5/M00/01/04/ChMkJlg2YQmIcX8bAB2MXkUwdIwAAYB0gLxApEAHYx2470.png"
+				data-sizes="auto"
+				alt="关于本人"
+				class="lazyload kira-post-cover-image disabled-kira-image"
+			/>
+			<h1>关于本人</h1>
+		</div>
+		
+		<div class="kira-post-meta kira-rainbow" style="margin:10px 0!important;">
+			<a><i class="kirafont icon-calendar-fill"></i>2023年11月30日</a>
+			<a><i class="kirafont icon-edit-fill"></i>255 字</a>
+			<a><i class="kirafont icon-time-circle-fill"></i>大概 1 分钟</a>
+		</div>
+		<h3><span id="本人本科就读于-世界一流大学-南京工业大学目前大一在读">本人本科就读于 <del>世界一流大学</del> 南京工业大学，目前大一在读</span></h3><p> 致力于成为一个小码农，主攻前端和嵌入式方向<br> 是个热爱科技的普通人，爱玩 <em>猫和老鼠手游</em> 和 <em>植物大战僵尸一代</em>，爱打羽毛球。此外，也是个 <span style="color: red"><strong>☭ 共产主义者 ☭</strong></span>，向伟大的无产阶级革命家毛主席致敬！</p>
+<blockquote>
+<p>本人思想绝对忠于党，忠于祖国，革命尚未成功，同志仍需努力</p>
+</blockquote>
+<hr>
+<h4><span id="感兴趣的方向">感兴趣的方向</span></h4><ul>
+<li>前端：HTML、CSS、JavaScript、TypeScript、Vue、React、Node.js、Webpack</li>
+<li>后端：Java、Python、Golang、Kotlin、Node.js</li>
+<li>数据库：MySQL、Redis、MongoDB</li>
+<li>Web服务器：Nginx、Caddy</li>
+<li>云计算&#x2F;云原生：Docker、K8S、OpenStack、微服务</li>
+<li>嵌入式：C&#x2F;C++、ARM、RISC-V、STM32、ESP32、ESP8266、Ardunio、树莓派</li>
+<li>其他：小程序开发、Unity、机器学习与深度学习</li>
+</ul>
+<hr>
+<h4><span id="联系我">联系我</span></h4><ul>
+<li>QQ: 140108969</li>
+<li>邮箱: <a href="mailto:&#x77;&#x79;&#115;&#115;&#x69;&#120;&#115;&#105;&#120;&#x73;&#x69;&#x78;&#x40;&#103;&#x6d;&#x61;&#x69;&#x6c;&#46;&#99;&#111;&#x6d;">&#x77;&#x79;&#115;&#115;&#x69;&#120;&#115;&#105;&#120;&#x73;&#x69;&#x78;&#x40;&#103;&#x6d;&#x61;&#x69;&#x6c;&#46;&#99;&#111;&#x6d;</a></li>
+<li><a href="https://">这是我的b站账号</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/WeiYuXingHan?tab=repositories">这是我的GitHub账号</a></li>
+</ul>
+
+	</article>
+
+	 
+    <div class="kira-post-copyright">
+        <strong>Author：</strong>WeiYuXingHan<br>
+        <strong>Link：</strong><a href="https://weiyuxinghan.github.io/PersonalBlogPage/about.html" title="https:&#x2F;&#x2F;weiyuxinghan.github.io&#x2F;PersonalBlogPage&#x2F;about.html" target="_blank" rel="noopener">https:&#x2F;&#x2F;weiyuxinghan.github.io&#x2F;PersonalBlogPage&#x2F;about.html</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+  
+	<div class="kira-post-meta kira-rainbow">
+		
+		
+	</div>
+	
+		
+<script src="/PersonalBlogPage/js/kira-code-copy.js"></script>
+
+	
+	
+	<div class="kira-post-footer">
+		
+
+		
+	</div>
+	
 </div>
 
 				</div>
