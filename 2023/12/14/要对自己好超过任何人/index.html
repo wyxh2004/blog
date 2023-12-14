@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="/PersonalBlogPage/css/layout.css">
 
 		
-		<title> 【Fira Code】一款为程序员量身打造的字体 -  微雨星晗的个人博客</title>
+		<title> Unity使用Newtonsoft报错的解决方案 -  微雨星晗的个人博客</title>
 		<link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
 		<script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
 		<!-- lazyload -->
@@ -337,55 +337,44 @@
 		
 		<div class="kira-post-cover">
 			<img
-				data-src="https://desk-fd.zol-img.com.cn/t_s960x600c5/g5/M00/01/04/ChMkJ1g2YQyITaVCAAutCotWG0YAAYB0wCFXlAAC60i793.jpg"
+				data-src="https://wyxh-1322159997.cos.ap-nanjing.myqcloud.com/Your%20Name2.png"
 				data-sizes="auto"
-				alt="【Fira Code】一款为程序员量身打造的字体"
+				alt="Unity使用Newtonsoft报错的解决方案"
 				class="lazyload kira-post-cover-image disabled-kira-image"
 			/>
-			<h1>【Fira Code】一款为程序员量身打造的字体</h1>
+			<h1>Unity使用Newtonsoft报错的解决方案</h1>
 		</div>
 		
 		<div class="kira-post-meta kira-rainbow" style="margin:10px 0!important;">
-			<a><i class="kirafont icon-calendar-fill"></i>2022年09月18日</a>
-			<a><i class="kirafont icon-edit-fill"></i>578 字</a>
-			<a><i class="kirafont icon-time-circle-fill"></i>大概 2 分钟</a>
+			<a><i class="kirafont icon-calendar-fill"></i>2023年12月14日</a>
+			<a><i class="kirafont icon-edit-fill"></i>1.4k 字</a>
+			<a><i class="kirafont icon-time-circle-fill"></i>大概 5 分钟</a>
 		</div>
-		<p>今天给大家介绍一款非常炫酷的等宽字体—— <strong>Fira Code</strong>。</p>
-<span id="more"></span>
+		<span id="more"></span>
 
 <!-- toc -->
 
 <ul>
-<li><a href="#%E4%BB%80%E4%B9%88%E6%98%AF-fira-code">什么是 Fira Code</a><ul>
-<li><a href="#%E9%A2%84%E8%A7%88">预览</a></li>
-</ul>
-</li>
-<li><a href="#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-fira-code">如何使用 Fira Code</a><ul>
-<li><a href="#%E4%B8%8B%E8%BD%BD%E5%AD%97%E4%BD%93">下载字体</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85%E5%AD%97%E4%BD%93">安装字体</a></li>
-<li><a href="#%E8%AE%BE%E7%BD%AE%E5%AD%97%E4%BD%93">设置字体</a></li>
+<li><a href="#%E6%88%91%E5%96%9C%E6%AC%A2%E7%9A%84%E4%BA%BA%E4%B8%8D%E5%96%9C%E6%AC%A2%E6%88%91">我喜欢的人不喜欢我…</a><ul>
+<li><a href="#%E4%BB%8A%E5%A4%A9%E6%83%B3%E5%88%B0%E4%BA%86%E6%B1%AA%E5%9B%BD%E7%9C%9F%E7%9A%84%E4%B8%80%E7%AF%87%E6%95%A3%E6%96%87%E4%BB%93%E4%BF%83%E5%9C%B0%E5%88%B0%E4%BA%86%E4%B8%AD%E5%B9%B4">今天想到了汪国真的一篇散文《仓促地到了中年》</a></li>
+<li><a href="#%E6%84%9F%E6%82%9F">感悟</a></li>
 </ul>
 </li>
 </ul>
 <!-- tocstop -->
 
-<h1><span id="什么是-fira-code">什么是 Fira Code</span></h1><p>Fira 是由 Mozilla 公司（也就是火狐浏览器的母公司）主推的字体系列，主打的就是具有 <strong>等宽</strong> 的属性。而 Fira Code 则在这一基础上加入了 <strong>编程连字特性</strong>，也就是 <code>Ligatures</code>。<br>Fira Code 利用这一特性，对编程人员常用的一些编程符号做了连字处理，将我们经常用到的诸如 <code>=&gt;</code>、<code>&lt;=</code>、<code>!=</code> 等超过一个字符的操作符渲染为对应的数学符号，使得我们能够更快地阅读理解代码。</p>
-<h2><span id="预览">预览</span></h2><p>我们可以先来看一下在 VSCode 中使用 Fira Code 书写代码的效果。来看下面这一段代码：</p>
-<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs ts"><span class="hljs-comment">/**</span><br><span class="hljs-comment"> * 这段 TypeScript 代码本身不具有任何意义</span><br><span class="hljs-comment"> * 只是为了展示 Fira Code 连字渲染的效果</span><br><span class="hljs-comment"> */</span><br><span class="hljs-keyword">const</span> <span class="hljs-title function_">func</span> = (<span class="hljs-params">arr: <span class="hljs-built_in">Array</span>&lt;<span class="hljs-built_in">any</span>&gt;</span>) =&gt; &#123;<br>	<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt;= arr.<span class="hljs-property">length</span>; i++) &#123;<br>		<span class="hljs-keyword">let</span> item = arr[i];<br>		<span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> item === <span class="hljs-string">&#x27;number&#x27;</span>) &#123;<br>			<span class="hljs-keyword">while</span> (item &gt;= <span class="hljs-number">10</span>) &#123;<br>				item /= <span class="hljs-number">10</span>; <span class="hljs-comment">// 只是为了演示效果，别在意代码效率了...</span><br>			&#125;<br>			<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`<span class="hljs-subst">$&#123;arr[i]&#125;</span> <span class="hljs-subst">$&#123;item % <span class="hljs-number">1</span> != <span class="hljs-number">0</span> ? <span class="hljs-string">&#x27;不能&#x27;</span> : <span class="hljs-string">&#x27;可以&#x27;</span>&#125;</span> 被 10 整除`</span>);<br>		&#125;<br>	&#125;<br>&#125;;<br><br><span class="hljs-keyword">const</span> arr = [<span class="hljs-number">1</span>, <span class="hljs-number">30</span>, <span class="hljs-number">24</span>, <span class="hljs-string">&#x27;afaa&#x27;</span>, <span class="hljs-literal">undefined</span>, <span class="hljs-number">50</span>];<br><span class="hljs-title function_">func</span>(arr);<br><br></code></pre></td></tr></table></figure>
-<p>下面是这段代码在 VSCode 中的效果图：<br><img data-fancybox="gallery" data-sizes="auto" data-src="https://assets.kira.host/Pictures/Others/20220918125944.png" alt="TypeScript Fira Code 预览" class="lazyload"></p>
-<h1><span id="如何使用-fira-code">如何使用 Fira Code</span></h1><p>本文下面将介绍如何在 VSCode 当中使用 Fira Code。</p>
-<h2><span id="下载字体">下载字体</span></h2><p>首先，我们进入到 <a target="_blank" rel="noopener" href="https://github.com/tonsky/FiraCode">Fira Code 官方仓库</a> 中，找到 Releases，点击进入<a target="_blank" rel="noopener" href="https://github.com/tonsky/FiraCode/releases/latest">最新的一次发布</a>。<br><img data-fancybox="gallery" data-sizes="auto" data-src="https://assets.kira.host/Pictures/Others/20220918123410.png" alt="FiraCode官方仓库" class="lazyload"></p>
-<h2><span id="安装字体">安装字体</span></h2><p>下载最新发布的 <strong>Assets</strong> 中的 <strong>Fira_Code_v*.*.zip</strong> ，这个是字体的压缩包。下载下来解压后，我们进入到其中的 <code>ttf</code> 文件夹，我们右键选中所有字体然后右键点击<strong>安装</strong>。<br><img data-fancybox="gallery" data-sizes="auto" data-src="https://assets.kira.host/Pictures/Others/20220918124037.png" alt="安装字体" class="lazyload"></p>
-<h2><span id="设置字体">设置字体</span></h2><p>安装完毕后，我们就可以在 VSCode 中使用该字体了。我们进入到 <code>settings.json</code> 当中，在文件中加入这两行设置：</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span><br>    <span class="hljs-comment">// ...</span><br>    <span class="hljs-attr">&quot;editor.fontFamily&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Fira Code&quot;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">&quot;editor.fontLigatures&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span><br>    <span class="hljs-comment">// ...</span><br><span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure>
-<p>这两行设置分别是设置编辑区字体以及是否开启连字符，添加这两行配置后就能够愉快地使用 Fira Code 进行编程了！</p>
+<h1><span id="我喜欢的人不喜欢我">我喜欢的人不喜欢我…</span></h1><h2><span id="今天想到了汪国真的一篇散文仓促地到了中年">今天想到了汪国真的一篇散文《仓促地到了中年》</span></h2><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs csharp">像被河水冲刷的船，你仓促地到了中年，体态、面容、眼神、心境都被盖上了中年的印戳。<br><br>回头望去，乌飞蝉噤、红枯绿瘦，青春已溜得不见踪影；向前看去，鹤发鸡皮、<br><br>枯萎蹒跚正在逼近。<br><br>中年和正午有些相似：凝重、深邃、空旷，是生命曲线上的一个极点。站在这儿，来路一览无余，去路上能搅出的动静也大致不出其右了。人生像魔术师抖开了他的包袱，不会再有太多的神秘可言了。<br><br>人们赋予这个年龄的关键词是“成熟”，可生活仍会硌疼你：家人生病你担心，孩子不听话你生气，工作出错你沮丧，没钱了你发愁... ...只是你学会了警惕这些灰色霉菌，不再给它们发酵生长的机会了。<br><br>在你这个年龄，左手要拽着孩子，右手要搀着父母，你成了他们两边的家长，女儿刚踏进青春期，像一只迷乱的羔羊，背上还驮着<span class="hljs-number">10</span>斤重的书包。她还那么脆弱，说话稍不对劲就会戳伤她。父母呢，个头缩得那么矮，走路一摇三晃的，你还忍心对他们发牢骚吗?爱人跟你一样，也在中年的河流上忙着捕捞。所以，你得有自我疏通和修补的能力。你得维护你一贯的形象：大大咧咧，乐乐呵呵。<br><br>这些年来，你受到岁月和生活的双重镂刻，内心也在不停地改变。沧海桑田，有的地方已经变硬了，有的地方却柔软了。从前你是树叶，环境是风，它一吹你就动。你跟着别人赶东赶西去上补习班，今天英语，明天文秘，后天管理，像猴子掰包谷。宴会上硬着头皮喝酒，却让胃痉挛不止。你在外边温文尔雅，在家里龇牙咧嘴，长着一身倒刺。你只想让社会接纳你，却不清楚自己要什么。那时，你生活的姿势是引颈远眺。上学的时候盼毕业；女儿小的时候巴不得她长大；工作的时候想退休；在乡野时憧憬都市，追到了都市又怀念乡野。总之真正的生活在山的那一边，而下巴颏儿下的生活不过是一段歌剧的序曲，一座港口的栈桥。现在你却后悔自己错过了好些生活。因为生命里的每一片草地、每一条溪流、每一块山丘都是只此一次的相遇。在日历被撕了一大半后你才学会了调整焦距，对准眼前。于是，你能听进父母的唠叨了，愿意陪他们散步了，也知道了拉他们去吃这吃那。发了奖金不再直奔化妆品柜台，而是会给爱人买一双柔软的鞋子。你会带女儿奔到海边看一回大海，冲到上海去看一场F1比赛，在她最想圆某个梦而你又有能力的时候帮她圆了，因为梦也会凋谢。你学着把菜炒香，把汤熬得很鲜，你通过这些小事去传递爱。你知道，也许过不了多久，今天还围着餐桌的父母将无踪可觅。女儿很快也会张开翅膀去寻找自己的天空。她将不会再每天一回家就拽着你的衣襟给你“播报”班上的新闻，也不会再往沙发上一躺，就把臭脚丫往你怀里塞了。幸福在流逝。相应的，有的东西却在不经意间被抽离了。不再想通过变换外形修改自己了，自己接纳了自己不就等于让世界接纳了自己吗？<br><br>现在，你会把一件衣服穿好几年，把一部手机用到无法再用，你想在这套旧房子里一直住到老。越来越多的同事已经开着自己的车上下班了，你却干脆连班车也不坐，改成了跑步上下班。由此你获得了一种自由和力量，你依赖的东西原来很少，生存其实并不困难。生活就是这样，当你退到了潮流的边缘，潮流反而成了不相干的背景。你也能和自己的工作和平相处了，不像以前那样蚂蚱似的在各个行当里乱跳了。因为你明白了无论什么工作，都像一块布，各有其细致明艳的正面，也有粗糙暗淡的背面。<br><br>到了中年，生命已经流过了青春湍急的峡谷，来到了相对开阔之地，变得从容清澈起来。<br><br>花儿谢了不必唏嘘，还有果实呢<br></code></pre></td></tr></table></figure>
+
+<h2><span id="感悟">感悟</span></h2><blockquote>
+<p>不知道为什么，身边的人好像都十分幸福，享受着自己所做的事，所爱的人。<br>好像只有我看不到生活的意义。<br>我时常喜欢看这些文学家们的散文来安慰自己，这个习惯没想到也保留到了大学毕业。<br>我是不是应该对自己好一点。<br>生活本该如此，我却总是喜欢把事情想得复杂。<br>没办法，这是我的命水吧。<br>我不知道自己该做什么。<br>总之，有点迷茫了吧。</p>
+</blockquote>
 
 	</article>
 
 	 
     <div class="kira-post-copyright">
         <strong>Author：</strong>WeiYuXingHan<br>
-        <strong>Link：</strong><a href="https://weiyuxinghan.github.io/PersonalBlogPage/2022/09/18/%E3%80%90Fira-Code%E3%80%91%E4%B8%80%E6%AC%BE%E4%B8%BA%E7%A8%8B%E5%BA%8F%E5%91%98%E9%87%8F%E8%BA%AB%E6%89%93%E9%80%A0%E7%9A%84%E5%AD%97%E4%BD%93/" title="https:&#x2F;&#x2F;weiyuxinghan.github.io&#x2F;PersonalBlogPage&#x2F;2022&#x2F;09&#x2F;18&#x2F;【Fira-Code】一款为程序员量身打造的字体&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;weiyuxinghan.github.io&#x2F;PersonalBlogPage&#x2F;2022&#x2F;09&#x2F;18&#x2F;【Fira-Code】一款为程序员量身打造的字体&#x2F;</a><br>
+        <strong>Link：</strong><a href="https://weiyuxinghan.github.io/PersonalBlogPage/2023/12/14/%E8%A6%81%E5%AF%B9%E8%87%AA%E5%B7%B1%E5%A5%BD%E8%B6%85%E8%BF%87%E4%BB%BB%E4%BD%95%E4%BA%BA/" title="https:&#x2F;&#x2F;weiyuxinghan.github.io&#x2F;PersonalBlogPage&#x2F;2023&#x2F;12&#x2F;14&#x2F;要对自己好超过任何人&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;weiyuxinghan.github.io&#x2F;PersonalBlogPage&#x2F;2023&#x2F;12&#x2F;14&#x2F;要对自己好超过任何人&#x2F;</a><br>
         
             <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
         
@@ -394,26 +383,20 @@
   
 	<div class="kira-post-nav">
 		<nav class="post-nav">
-			  
+			          
 			<!-- 先找到与当前文字相同的目录 -->
-			                  
+			   
 			<!-- 在找到当前文章所在的 index -->
-			                    
-			<!-- 上一篇文章 -->
-			<div class="old">
-				<span>上一章</span>
-				<a href="/PersonalBlogPage/2022/09/10/TypeScript-IOC-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%88%9D%E6%8E%A2/"> TypeScript IOC 设计模式初探</a>
-			</div>
-			                  
+			          
 		</nav>
 	</div>
 	
 	<div class="kira-post-meta kira-rainbow">
 		
-			<a class="kirafont icon-container-fill -link" href="/PersonalBlogPage/categories/%E7%BC%96%E7%A8%8B/">编程</a>
+			<a class="kirafont icon-container-fill -link" href="/PersonalBlogPage/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/">碎碎念</a>
 		
 		
-			<a class="kirafont icon-tag-fill -none-link" href="/PersonalBlogPage/tags/VSCODE/" rel="tag">VSCODE</a>
+			<a class="kirafont icon-tag-fill -none-link" href="/PersonalBlogPage/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a>
 		
 	</div>
 	
